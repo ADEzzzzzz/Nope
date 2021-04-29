@@ -1,31 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!--Index.aspx-->
 
-<head>
-    <meta charset="UTF-8">
-    <title>弹窗</title>
-    <link rel="stylesheet" type="text/css" href="弹窗.css">
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="divdiv.Index" %>
 
-</head>
+    <!DOCTYPE html>
 
-<body>
-    <button id="open_btn" class="btn">弹窗</button>
-    <!-- 弹窗内容开始 -->
-    <div id="background" class="back">
-        <div id="div1" class="content">
-            <div id="close">
-                <span id="close-button">×</span>
-                <h2>弹窗头部</h2>
-            </div>
-            <div id="div2">
-                <h3>弹窗标题</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ullam, nisi, enim laboriosam ea cum necessitatibus ipsum cupiditate neque soluta qui autem odit eligendi blanditiis voluptatem repellat suscipit quia perspiciatis.</p>
-            </div>
-            <h3 id="foot">底部内容</h3>
-        </div>
-    </div>
-    <!-- 弹窗内容结束 -->
-    <script src="弹窗.js"></script>
-</body>
+    <html xmlns="http://www.w3.org/1999/xhtml">
 
-</html>
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <script>
+            function oldJump() {
+                location = "new1.aspx";
+            }
+        </script>
+    </head>
+
+    <body>
+        <form id="form1" runat="server">
+            <script>
+                for (var i = 0; i < 100; i++) {
+                    document.write("<p>这是一个 p </p>");
+                }
+            </script>
+            <input id="btnSelect" type="button" value="button" onclick="oldJump()" />
+        </form>
+    </body>
+
+    </html>
+    ———————————————— 版权声明：本文为CSDN博主「Fanstorm丶」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/wf824284257/article/details/75804142
