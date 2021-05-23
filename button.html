@@ -2,19 +2,20 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="button.css">
-    <link rel="shortcut icon" href="icon.ico">
     <script language="JavaScript">
         var password;
         var pass1 = "what you want?";
         password = prompt('Please enter your password to view this page!', '');
-        if (password == pass1)
+        if (password == pass1) {
             alert('Password Correct! Click OK to enter!');
+        }
         if (password != pass1) {
             alert('Password Incorrect! Please Try again!');
             window.close();
         }
     </script>
+    <link rel="stylesheet" href="button.css">
+    <link rel="shortcut icon" href="icon.ico">
 </head>
 
 <body>
