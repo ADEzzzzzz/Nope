@@ -4,18 +4,16 @@
 <head>
     <link rel="stylesheet" href="button.css">
     <link rel="shortcut icon" href="icon.ico">
-    <script type="text/javascript">
-        var password = ""
-        password = prompt('请输入密码(本网站需输入密码才可以进入):', '');
-
-        function custom_close() {
+    <script language="JavaScript">
+        var password;
+        var pass1 = "what you want?";
+        password = prompt('Please enter your password to view this page!', '');
+        if (password == pass1)
+            alert('Password Correct! Click OK to enter!');
+        if (password != pass1) {
+            alert('Password Incorrect! Please Try again!');
             window.opener = null;
-            window.open('', '_self');
             window.close();
-        }
-        if (password != 'Dont look this file pls') {
-
-            custom_close();
         }
     </script>
 </head>
