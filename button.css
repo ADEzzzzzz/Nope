@@ -28,7 +28,7 @@ button {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    width: 250px;
+    width: 25px;
 }
 
 button:hover {
