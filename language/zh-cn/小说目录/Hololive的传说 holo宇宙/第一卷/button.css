@@ -1,3 +1,9 @@
+hr.line {
+    border: 0;
+    border-bottom: 0.0625rem solid #bbb;
+    margin: 3rem 0;
+}
+
 button {
     font-size: 1em;
     background: #3498db;
