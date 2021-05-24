@@ -9,6 +9,7 @@
     <title>Page Not Found</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="404err.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,6 +21,25 @@
             </div>
         </main>
         <p>This web page will be automatically redirected to the custom website after 3 seconds.</p>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <script>
+            function move() {
+                var elem = document.getElementById("myBar");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width == 100) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                    }
+                }
+            }
+        </script>
 </body>
 
 </html>
