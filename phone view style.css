@@ -10,7 +10,7 @@
     .topnav .time {
         display: none;
     }
-    .topnav {
+    .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
@@ -23,7 +23,7 @@
         padding-top: 60px;
         text-align: center;
     }
-    .topnav a {
+    .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
@@ -31,8 +31,15 @@
         display: block;
         transition: 0.3s;
     }
-    .topnav a:hover {
+    .sidenav a:hover {
         color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
     }
 }
 
