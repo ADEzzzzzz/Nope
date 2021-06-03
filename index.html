@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     <div class="topnav">
         <a class="active" href="#">Home</a>
         <a href="/language/en-my/Home Page/About/">About</a>
@@ -33,6 +33,13 @@
         </div>
     </div>
     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
         var myVar = setInterval(function() {
             myTimer()
         }, 1000);
