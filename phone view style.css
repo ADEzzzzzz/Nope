@@ -38,6 +38,9 @@
         display: none;
         background-color: #111;
         overflow: hidden;
+        color: white;
+        height: 100%;
+        z-index: 1;
     }
 }
 
