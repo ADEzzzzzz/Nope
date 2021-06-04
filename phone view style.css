@@ -33,6 +33,12 @@
         font-size: 36px;
         margin-left: 50px;
     }
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 700px) {
