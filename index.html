@@ -36,9 +36,25 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/language/en-my/Home Page/About/">About</a>
         <a href="/Redirect/Home Page/youtube channel">YouTube</a>
-        <a>Other areas</a>
+        <a class="accordion">Other areas</a>
     </div>
     <span id="opennavtop" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
