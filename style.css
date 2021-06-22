@@ -121,7 +121,7 @@ body {
     display: block;
 }
 
-footer {
+.footer {
     position: fixed;
     width: 100%;
     left: 0;
