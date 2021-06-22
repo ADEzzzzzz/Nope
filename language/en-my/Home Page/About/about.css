@@ -187,3 +187,14 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #E9E9E9;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
