@@ -83,16 +83,24 @@
     </div>
     <span id="opennavtop" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="row">
-        <div class="main">
-            <h2>HOW TO INSTALL PLUGINS ON DISCORD</h2>
-            <h5>Bryan Ang, June 22, 2021</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
+        <div class="main" height="12px">
+            <a href="https//www.google.com">
+                <h2>HOW TO INSTALL PLUGINS ON DISCORD</h2>
+                <h5>Bryan Ang, June 22, 2021</h5>
+            </a>
+            <div align="center" class="img"><img id="Imgbig" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"><img id="Imgbig" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+            </div>
             <p>Discord is an amazing free chat service, which allows its users to talk with each other. You can use messages, voice, or video chat for this matter. </p>
         </div>
     </div>
 
     <div class="footer">
         <h2>Powered by Github</h2>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -128,7 +136,24 @@
             document.getElementById("datetime").innerHTML = t;
         }
     </script>
+    <script>
+        var modal = document.getElementById("myModal");
 
+        var img = document.getElementById("Imgbig");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
