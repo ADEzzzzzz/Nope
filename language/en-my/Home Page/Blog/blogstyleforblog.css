@@ -9,3 +9,7 @@ div.heightcenter {
     margin-left: auto;
     margin-right: auto;
 }
+
+p.topnavlineup {
+    padding: 5px;
+}
