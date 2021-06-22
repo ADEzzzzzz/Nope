@@ -69,28 +69,28 @@
         <h2>Powered by Github</h2>
     </div>
     <script>
-        var acc = document.getElementsByClassName("accordion ");
+        var acc = document.getElementsByClassName("accordion");
         var i;
 
         for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click ", function() {
-                this.classList.toggle("active ");
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
                 var panel = this.nextElementSibling;
-                if (panel.style.display === "block ") {
-                    panel.style.display = "none ";
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
                 } else {
-                    panel.style.display = "block ";
+                    panel.style.display = "block";
                 }
             });
         }
     </script>
     <script>
         function openNav() {
-            document.getElementById("mySidenav ").style.width = "100% ";
+            document.getElementById("mySidenav").style.width = "100%";
         }
 
         function closeNav() {
-            document.getElementById("mySidenav ").style.width = "0 ";
+            document.getElementById("mySidenav").style.width = "0";
         }
         var myVar = setInterval(function() {
             myTimer()
@@ -99,7 +99,25 @@
         function myTimer() {
             var d = new Date();
             var t = d.toLocaleTimeString();
-            document.getElementById("datetime ").innerHTML = t;
+            document.getElementById("datetime").innerHTML = t;
+        }
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("Imgbig");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
         }
     </script>
 </body>
