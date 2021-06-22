@@ -1,0 +1,17 @@
+hr.line {
+    border: 0;
+    border-bottom: 0.0625rem solid #bbb;
+    margin: 1rem 0;
+}
+
+div.heightline {
+    max-width: 958px;
+    margin-left: auto;
+    margin-right: auto;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    border-right-color: #333333;
+    border-left-color: #333333;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
