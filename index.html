@@ -97,44 +97,45 @@
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
         </div>
+    </div>
 
-        <div class="footer">
-            <h2>Powered by Github</h2>
-        </div>
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+    <div class="footer">
+        <h2>Powered by Github</h2>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
-                });
-            }
-        </script>
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-            var myVar = setInterval(function() {
-                myTimer()
-            }, 1000);
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        var myVar = setInterval(function() {
+            myTimer()
+        }, 1000);
 
-            function myTimer() {
-                var d = new Date();
-                var t = d.toLocaleTimeString();
-                document.getElementById("datetime").innerHTML = t;
-            }
-        </script>
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("datetime").innerHTML = t;
+        }
+    </script>
 
 </body>
 
