@@ -34,7 +34,6 @@ a.hyperlinks:hover {
     color: #2196F3;
     opacity: 0.5;
     text-decoration: none;
-    transition-timing-function: ease;
 }
 
 #myImg,
