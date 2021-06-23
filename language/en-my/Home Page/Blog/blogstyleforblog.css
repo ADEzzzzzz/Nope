@@ -12,6 +12,12 @@ div.heightcenter {
 
 p.topnavlineup {
     padding: 5px;
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: black;
+    }
 }
 
 a.blacknone:link,
