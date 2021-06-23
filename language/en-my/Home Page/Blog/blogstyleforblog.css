@@ -26,11 +26,13 @@ a.hyperlinks:active,
 a.hyperlinks:link,
 a.hyperlinks:visited {
     color: #2196F3;
+    text-decoration: none;
 }
 
 a.hyperlinks:hover {
     color: #2196F3;
     opacity: 0.5;
+    text-decoration: none;
 }
 
 #myImg,
