@@ -39,6 +39,40 @@
 
     </div>
     <span id="opennavtop" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        var myVar = setInterval(function() {
+            myTimer()
+        }, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("datetime").innerHTML = t;
+        }
+    </script>
 </body>
 
 </html>
