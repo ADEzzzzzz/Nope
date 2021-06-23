@@ -31,9 +31,7 @@ a.hyperlinks:visited {
 }
 
 a.hyperlinks:hover {
-    color: #2196F3;
     opacity: 0.5;
-    text-decoration: none;
 }
 
 #myImg,
