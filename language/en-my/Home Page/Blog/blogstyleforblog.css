@@ -28,13 +28,13 @@ a.hyperlinks:visited {
     color: #2196F3;
     text-decoration: none;
     transition: 0.3s;
-    transition-timing-function: ease;
 }
 
 a.hyperlinks:hover {
     color: #2196F3;
     opacity: 0.5;
     text-decoration: none;
+    transition-timing-function: ease;
 }
 
 #myImg,
