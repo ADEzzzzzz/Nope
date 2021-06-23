@@ -1,0 +1,11 @@
+a.hyperlink:active,
+a.hyperlink:link,
+a.hyperlink:visited {
+    color: #2196F3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.hyperlink:hover {
+    opacity: 0.5;
+}
